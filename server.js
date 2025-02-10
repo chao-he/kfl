@@ -27,7 +27,7 @@ if (!fs.existsSync(dir)) {
 
 // 配置 DashScope API
 const openai = new OpenAI({
-    apiKey: process.env.DASHSCOPE_API_KEY || "sk-b8ce920bb3654f89b48219f1d7bc886f", // 替换为你的 DashScope API 密钥
+    apiKey: process.env.DASHSCOPE_API_KEY || "api_key", // 替换为你的 DashScope API 密钥
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
 });
 
