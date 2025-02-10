@@ -50,7 +50,7 @@ app.post('/upload', upload.array('images'), async (req, res) => {
 
             // 调用 DashScope API 进行 OCR 识别
             const completion = await openai.chat.completions.create({
-                model: "qwen-vl-max", // 使用通义千问的多模态模型
+                model: "qwen-vl-ocr", // 使用通义千问的多模态模型
                 messages: [
                     {
                         role: "user",
